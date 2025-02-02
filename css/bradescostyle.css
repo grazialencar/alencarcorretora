@@ -1,0 +1,789 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F7F5F6;
+}
+
+/*------------------ header ----------------------*/
+
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999999; /* Adiciona esta propriedade */
+}
+
+nav.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    padding: 0px 20px;
+    height: 60px;
+}
+
+nav.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+nav.menu ul li {
+    display: inline;
+}
+
+nav.menu ul li a {
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+    text-decoration: none;
+    color: #CE1C30;
+    font-size: 14px;
+
+}
+
+nav.menu ul li a:hover{
+    border-bottom: 2px solid #CE1C30;
+   transition: 0.1s;
+}
+
+nav.menu .btn-solicitar-cotacao {
+    background-color: #CE1C30;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 60px;
+    border: 1px solid #CE1C30;
+}
+
+nav.menu .btn-solicitar-cotacao:hover {
+    background-color: transparent;
+    border: 1px solid #CE1C30;
+    color: #CE1C30;
+}
+
+/*--------------------MENU MOBILE---------------------------*/
+.btn-abrir-menu .icon, .menu-mobile, .btn-fechar .icon{
+    display: none;
+}
+
+/*----------------------- hero --------------------------*/
+
+#hero {
+    text-align: center;
+    padding: 80px 120px;
+    background-color: #F7F5F6;
+    background-size: cover;
+    height: 90vh;
+
+}
+
+#hero h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 27px;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    color: #4F4747;
+
+}
+
+.btn-principal {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #CE1C30;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 60px;
+    text-decoration: none;
+    border: 1px solid #CE1C30;
+}
+
+.btn-principal:hover{
+    background-color: transparent;
+    border: 1px solid #CE1C30;
+    color: #CE1C30;
+}
+
+#hero img{
+    max-width: 80%;
+    height: auto;
+    padding: 60px 60px;
+}
+
+
+/*----------------planos--------------------*/
+
+#planos {
+    padding: 50px 120px;
+    align-items: center;
+}
+
+#planos h2 {
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    color: #000000;
+}
+
+.planos-grid {
+    display: flex;
+    grid-template-columns: 20px 20px;
+    gap: 30px;
+    margin: 0 auto;
+    
+}
+
+.plano-item {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+
+.plano-item h3 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.1em;
+    margin: 0;
+    color: #CE1C30;
+    margin-bottom: 10px;
+}
+
+.plano-item p {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    color: #555555;
+    max-width: 200px;
+    padding: 0px 20px;
+}
+
+.plano-item img{
+    padding: 10px;
+    text-align: center;
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.tex-fale {
+    color: #CE1C30;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    padding: 10px 20px;
+}
+
+.tex-fale:hover{
+    text-decoration: underline;
+}
+
+.plano-item:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*-------------------------- valores --------------------------------*/
+
+.txt-beneficios{
+    padding: 10px 50px;
+}
+
+.txt-beneficios h2{
+    color: #CE1C30;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.txt-beneficios p{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #555555;
+}
+.redes{
+    align-items: center;
+    display: flex;
+}
+.redes img{
+    height: 110px;
+    padding: 30px 20px;
+    gap: 20px;
+}
+
+
+/*-------------------------- contato -------------------------------*/
+
+#contato {
+    padding: 60px 20px;
+    background-color: #CE1C30;
+    display: flex;
+}
+
+#contato .text-contato{
+    max-width: 370px;
+    padding: 0px 100px;
+}
+
+#contato .text-contato h2{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    font-size: 35px;
+}
+
+#contato .text-contato p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #F7F5F6;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+#contato .retan-contato{
+    padding: 0px 50px;
+}
+
+#contato .re-contato{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    width: 100%;
+}
+
+
+#contato form {
+    padding: 30px 0px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contato label {
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    display: block;
+    margin-bottom: 5px;
+    color: #4F4747;
+    
+}
+
+#contato input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#contato input:focus{
+    border: 1px solid #072A49;
+}
+
+#contato h3{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #ffffff;
+    border-radius: 60px;
+    color: #CE1C30;
+    padding: 5px 10px;
+    max-width: 180px;
+}
+
+.btn-enviar {
+    background-color: #CE1C30;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 30px;
+    border: 1px solid #CE1C30;
+}
+
+.btn-enviar:hover{
+    background-color: transparent;
+    border: 1px solid #CE1C30;
+    color: #CE1C30;
+}
+
+.whats {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+.efeito-gri1, .efeito-text-topo, .efeito-solu, .efeito-imgvalores, .efeito-txtvalores, .efeito-txtsoli .efeito-btn-topo, .efeito-text, .efeito-retangulo, .efeito-text-solu, .efeito-btn-solu, .efeito-gri2, .efeito-gri3, .efeito-retangulo, .efeito-imgsobre{
+    visibility: hidden;
+}
+
+/*----------------------------------footer-----------------------------------------*/
+
+.rodape{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(../img/logobranca.png);
+    background-color: #383737;
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    font-family: helvetica;
+}
+
+.rodape-direitos{
+    color: white;
+    width: calc(100% - 20px);
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    color: #CE1C30;
+}
+
+.rodape-direitos p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+}
+
+
+/*mobile*/
+@media screen and (max-width: 1024px){
+    nav.menu ul{
+        gap: 20px;
+    }
+    nav.menu ul li a{
+        font-size: 13px;
+    }
+    nav.menu .btn-solicitar-cotacao{
+        padding: 6px 12px;
+    }
+    .contact-info{
+        font-size: 10px;
+        gap: 90px;
+        font-weight: 200;
+    }
+    #planos{
+        padding: 50px 60px;
+    }
+    .planos-grid{
+        gap: 10px;
+    }
+    .plano-item h3{
+        font-size: 14px;
+    }
+    .plano-item p{
+        font-size: 10px;
+        max-width: 300px;
+        padding: 0 10px;
+    }
+    .tex-fale{
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+    .retan{
+        padding: 100px 40px;
+    }
+    .retangulo{
+        padding: 30px 20px;
+    }
+    .retangulo .imgsobre img{
+        max-width: 95%;
+    }
+    .valoress{
+        padding: 35px 80px;
+    }
+    .valoress h2{
+        max-width: 300px;
+        font-size: 20px;
+    }
+    .valoress h3{
+        max-width: 300px;
+        font-size: 15px;
+    }
+    .valores p{
+        font-size: 12px;
+    }
+    #hero h1{
+        font-size: 30px;
+    }
+    .solucaopl{
+        padding: 0 90px;
+    }
+    .solucao{
+        padding: 40px 30px;
+    }
+    .solucao h2{
+        font-size: 20px;
+    }
+    .fale-especialista{
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+    #contato .text-contato h2{
+        font-size: 30px;
+    }
+    #contato .text-contato p{
+        font-size: 20px;
+    }
+    #contato .text-contato{
+        padding: 0px 10px;
+    }
+    #contato .retan-contato{
+        padding: 0px 90px;
+    }
+    #hero{
+        height: 50vh;
+        padding: 50px 80px;
+    }
+    .topo ul.box-redes-sociais{
+        margin-left: 50px;
+    }
+    ul.box-redes-sociais {
+        padding: 0px 60px;
+      
+      }
+      .rodape-div-3{
+        padding: 0px 60px;
+      }
+      .redes img{
+        height: 95px;
+        gap: 5px;
+    }
+    
+}
+
+@media (max-width: 769px) {
+    .logo img{
+        height: 80px;
+        padding-right: 500px;
+    }
+    nav.menu ul{
+        display: none;
+    }
+    .btn-abrir-menu .icon{
+        color: #CE1C30;
+        font-size: 40px;
+        display: block;
+        padding: 10px 0;
+    }
+    
+    .menu-mobile{
+        background: #CE1C30;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999999999;
+        width: 0%;
+        overflow: hidden;
+        transition: .5s;
+        display: block;
+    }
+    .menu-mobile.abir-menu{
+        width: 70%;
+    }
+    
+    .menu-mobile.abir-menu ~ .overlay-menu{
+        display: block;
+    }
+    .menu-mobile .btn-fechar .icon{
+        color: white;
+        font-size: 30px;
+        display: block;
+    }
+    .menu-mobile .btn-fechar{
+        padding: 20px 5%;
+    }
+    
+    .menu-mobile nav ul{
+        text-align: right;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    
+    .menu-mobile nav ul li a{
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        padding: 20px 8%;
+        gap: 70px;
+        display: block;
+        text-decoration: none;
+    }
+    .menu-mobile nav ul li a:hover{
+        background-color: white;
+        color: #CE1C30;
+    }
+    
+    .overlay-menu{
+        background-color: #0000009c;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999999;
+        display: none;
+    }
+    header{
+        display: flex;
+    }
+    nav.menu{
+        margin: 0;
+        padding: 0 2px;
+    }
+    .retangulo{
+        padding: 20px 20px;
+    }
+    .retan{
+        padding: 30px 40px;
+    }
+    #contato .text-contato h2{
+        font-size: 30px;
+    }
+    #contato .text-contato p{
+        font-size: 18px;
+    }
+    #contato .text-contato{
+        padding: 0px 20px;
+    }
+    .redes img{
+        height: 60px;
+        gap: 5px;
+    }
+
+
+}
+
+@media screen and (max-width: 576px){
+    .topo, nav.menu ul{
+        display: none;
+    }
+    .logo img{
+        height: 50px;
+        padding-right: 150px;
+    }
+    #hero{
+        padding: 20px 5px;
+    }
+    #hero h1{
+        font-size: 17px;
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+    #hero img{
+        padding: 50px 0px;
+    }
+    .btn-principal {
+        padding: 10px 14px;
+        font-size: 16px;
+    }
+    .text-content {
+        font-size: 12px;
+        max-width: 400px;
+        margin-right: 0px;
+    }
+    #planos{
+        padding: 10px 20px;
+    }
+    #planos h2{
+        font-size: 17px;
+        margin-top: 100px;
+    }
+    .planos-grid{
+        gap: 15px;
+        flex-direction: column;
+    }
+    .plano-item h3{
+        font-size: 20px;
+    }
+    .plano-item p{
+        font-size: 14px;
+        max-width: 300px;
+        padding: 0 10px;
+    }
+    #contato{
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+    #contato .text-contato h2{
+        font-size: 25px;
+    }
+    #contato .text-contato p{
+        font-size: 20px;
+    }
+    #contato .re-contato{
+        padding: 10px 20px;
+        width: 90%;
+    }
+    #contato .retan-contato{
+        padding: 0px 20px;
+    }
+    #contato form {
+        padding: 30px 0px;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: left;
+    }
+    #contato .retan-contato .imglogo-contato img{
+        max-width: 50%;
+        height: auto;
+    }
+    .btn-abrir-menu .icon{
+        color: #CE1C30;
+        font-size: 40px;
+        display: block;
+        padding: 10px 0;
+    }
+    
+    .menu-mobile{
+        background: #CE1C30;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999999999;
+        width: 0%;
+        overflow: hidden;
+        transition: .5s;
+        display: block;
+    }
+    .menu-mobile.abir-menu{
+        width: 70%;
+    }
+    
+    .menu-mobile.abir-menu ~ .overlay-menu{
+        display: block;
+    }
+    .menu-mobile .btn-fechar .icon{
+        color: white;
+        font-size: 30px;
+        display: block;
+    }
+    .menu-mobile .btn-fechar{
+        padding: 20px 5%;
+    }
+    
+    .menu-mobile nav ul{
+        text-align: right;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    
+    .menu-mobile nav ul li a{
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        padding: 20px 8%;
+        gap: 70px;
+        display: block;
+        text-decoration: none;
+    }
+    .menu-mobile nav ul li a:hover{
+        background-color: white;
+        color: #CE1C30;
+    }
+    
+    .overlay-menu{
+        background-color: #0000009c;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999999;
+        display: none;
+    }
+    header{
+        display: flex;
+    }
+    nav.menu{
+        margin: 0;
+        padding: 0 2px;
+    }
+    .redes{
+        flex-direction: column;
+        padding: 10px 10px;
+  
+    }
+    .redes img{
+        height: 80px;
+        gap: 5px;
+    }
+    .redes .rededor{
+        height: 50px;
+    }
+    .txt-beneficios{
+        padding: 10px 10px;
+    }
+
+    
+    
+}
