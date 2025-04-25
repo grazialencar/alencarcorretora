@@ -1,16 +1,16 @@
-# Alencar Corretora - Landing Page Estratégica para Tráfego Pago
+# Alencar Corretora
 
 Este projeto é uma landing page criada estrategicamente para **campanhas de tráfego pago** da Alencar Corretora, com foco na conversão de leads interessados em **planos de saúde e odontológicos**.
 
 ---
 
-## 🎯 Objetivo
+### 🎯 Objetivo
 
 A página foi desenvolvida com foco em **atrair, engajar e converter** visitantes em leads qualificados, principalmente através de anúncios da Meta Ads e Google Ads.
 
 ---
 
-## ✅ Elementos Essenciais de uma Landing Page para Tráfego Pago
+### ✅ Elementos Essenciais de uma Landing Page para Tráfego Pago
 
 Para garantir alta conversão, esta landing page inclui:
 - **Headline clara e direta**: Apresenta a proposta de valor logo no topo.
@@ -22,7 +22,7 @@ Para garantir alta conversão, esta landing page inclui:
 
 ---
 
-## 💡 Tecnologias Utilizadas
+### 💡 Tecnologias Utilizadas
 
 - HTML5 + CSS3
 - JavaScript (puro)
